@@ -90,11 +90,24 @@
                 <td>{{ data.id }}</td>
               </tr>
               {% for k, v in data['properties'].items() %}
-                {% if k != data['id_field'] %}
+                {% if k != data['id_field'] and k == 'prov_metadata' %}
                 <tr>
                   <td>{{ k | striptags }}</td>
                   <td>{{ render_item_value(v, 80) }}</td>
-                </tr>
+                </tr>               
+                {% endif %}
+                {% if k == 'prov_metadata' %}
+                <tr>
+                  <td>{{ k | striptags }}</td>
+                  <td>
+                      <h3>Provenance Graph</h3>
+                      <ul>
+{% with prov=v %}
+    {% include 'prov_recursive.html' %}
+{% endwith %}
+                      </ul>
+                  </td>
+                </tr>               
                 {% endif %}
               {% endfor %}
                 <tr>

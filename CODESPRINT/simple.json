@@ -1,0 +1,107 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "record-1",
+        "title": "Feature 1",
+        "description": "This is a description of feature 1",
+        "prov_metadata": {
+          "@context": {
+            "prov": "http://www.w3.org/ns/prov#",
+            "schema": "http://schema.org/"
+          },
+          "@type": "prov:Entity",
+          "@id": "https://example.org/dataset/record-1",
+          "prov:generatedAtTime": "2024-01-01T00:00:00Z",
+          "prov:wasGeneratedBy": {
+            "@type": "prov:Activity",
+            "@id": "https://example.org/activity/1",
+            "prov:startedAtTime": "2024-01-01T00:00:00Z",
+            "prov:endedAtTime": "2024-01-01T01:00:00Z"
+          },
+          "prov:wasAttributedTo": {
+            "@type": "prov:Agent",
+            "@id": "https://example.org/agent/1",
+            "schema:name": "John Doe"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://example.org/dataset/record-2"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [100.0, 0.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "record-2",
+        "title": "Feature 2",
+        "description": "This is a description of feature 2",
+        "prov_metadata": {
+          "@context": {
+            "prov": "http://www.w3.org/ns/prov#",
+            "schema": "http://schema.org/"
+          },
+          "@type": "prov:Entity",
+          "@id": "https://example.org/dataset/record-2",
+          "prov:generatedAtTime": "2024-01-02T00:00:00Z",
+          "prov:wasGeneratedBy": {
+            "@type": "prov:Activity",
+            "@id": "https://example.org/activity/2",
+            "prov:startedAtTime": "2024-01-02T00:00:00Z",
+            "prov:endedAtTime": "2024-01-02T01:00:00Z"
+          },
+          "prov:wasAttributedTo": {
+            "@type": "prov:Agent",
+            "@id": "https://example.org/agent/2",
+            "schema:name": "Jane Smith"
+          },
+          "prov:wasDerivedFrom": {
+            "@id": "https://example.org/dataset/record-3"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [101.0, 1.0]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "record-3",
+        "title": "Feature 3",
+        "description": "This is a description of feature 3",
+        "prov_metadata": {
+          "@context": {
+            "prov": "http://www.w3.org/ns/prov#",
+            "schema": "http://schema.org/"
+          },
+          "@type": "prov:Entity",
+          "@id": "https://example.org/dataset/record-3",
+          "prov:generatedAtTime": "2024-01-03T00:00:00Z",
+          "prov:wasGeneratedBy": {
+            "@type": "prov:Activity",
+            "@id": "https://example.org/activity/3",
+            "prov:startedAtTime": "2024-01-03T00:00:00Z",
+            "prov:endedAtTime": "2024-01-03T01:00:00Z"
+          },
+          "prov:wasAttributedTo": {
+            "@type": "prov:Agent",
+            "@id": "https://example.org/agent/3",
+            "schema:name": "Alice Johnson"
+          }
+        }
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [102.0, 2.0]
+      }
+    }
+  ]
+}
